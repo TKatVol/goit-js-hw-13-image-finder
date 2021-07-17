@@ -22,14 +22,8 @@ img {
   max-width: 100%;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .search-form {
-  padding: 40px;
+  padding: 20px;
 }
 
 .search-form-input {
@@ -39,10 +33,6 @@ img {
 
 .is-hidden {
   display: none;
-}
-
-.load-more-btn {
-  margin-bottom: 40px;
 }
 
 .search-form-btn,
@@ -60,13 +50,17 @@ img {
   background: linear-gradient(0deg, rgba(0, 3, 255, 1) 0%, rgba(2, 126, 251, 1) 100%);
 }
 
+.gallery-container {
+  padding: 20px;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  align-items: center;
+  justify-content: center;
   list-style: none;
-  margin-left: auto;
-  margin-right: auto;
+
   margin-bottom: 20px;
 }
 
