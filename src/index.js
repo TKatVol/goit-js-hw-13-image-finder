@@ -30,7 +30,7 @@ const searchImages = event => {
 }
 
 const loadMoreImages = () => {
-    fetchImagesCards();
+   fetchImagesCards();
 }
 
 const fetchImagesCards = () => {
@@ -49,7 +49,8 @@ const fetchImagesCards = () => {
              
             showSuccess();
             createImagesCards(hits);
-        })   
+            scrollToBottom();
+        }) 
 }
 
 const showOrHideBtn = number => {
@@ -68,10 +69,12 @@ const clearGalleryContainer = () => {
     refs.galleryContainer.innerHTML = '';
 }
 
-refs.page.scrollIntoView({
-  behavior: 'smooth',
-  block: 'end',
-});
+const scrollToBottom = () => {
+    refs.galleryContainer.scrollIntoView({
+      behavior: 'smooth',
+      block: 'end',
+    });
+}
 
 refs.searchForm.addEventListener('submit', searchImages);
 refs.loadMoreBtn.addEventListener('click', loadMoreImages);
