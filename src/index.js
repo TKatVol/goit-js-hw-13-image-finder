@@ -49,7 +49,7 @@ const fetchImagesCards = () => {
              
             showSuccess();
             createImagesCards(hits)
-            setTimeout(scrollToBottom, 2000);
+            setTimeout(scrollToBottom, 1000);
         }) 
 }
 

@@ -61,12 +61,15 @@ img {
   justify-content: center;
   list-style: none;
 
+  margin-left: -10px;
+  margin-top: -10px;
   margin-bottom: 20px;
 }
 
 .images-item {
-  width: 370px;
   height: 320px;
+  margin-left: 10px;
+  margin-top: 10px;
   color: white;
   background: #000033;
 
@@ -74,14 +77,6 @@ img {
     0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 
   transition: transform var(--animation-duration) var(--timing-function);
-}
-
-.images-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-}
-
-.images-item:not(:nth-child(3n)) {
-  margin-right: 30px;
 }
 
 .images-item:hover {
