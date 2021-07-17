@@ -48,8 +48,8 @@ const fetchImagesCards = () => {
             }
              
             showSuccess();
-            createImagesCards(hits);
-            scrollToBottom();
+            createImagesCards(hits)
+            setTimeout(scrollToBottom, 2000);
         }) 
 }
 
