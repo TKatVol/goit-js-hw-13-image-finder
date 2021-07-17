@@ -22,6 +22,6 @@ export function showSuccess() {
 export function showError() {
     error({
        title: "🤔",
-        text: "Make sure all words are spelled correctly?",
+        text: "Make sure all words are spelled correctly...",
     });
 }

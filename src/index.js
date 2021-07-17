@@ -1,5 +1,5 @@
 import './css/common.css';
-import ImagesApiService from './js/apiServece.js';
+import ImagesApiService from './js/apiService.js';
 import galleryTpl from './templates/galleryCard.hbs';
 import getRefs from './js/getRefs';
 import { showSuccess, showInfo, showError } from './js/pnotify.js';
@@ -26,8 +26,7 @@ const searchImages = event => {
     myImages.resetPage();
     clearGalleryContainer();
     showOrHideBtn();
-    fetchImagesCards();
-    
+    fetchImagesCards();    
 }
 
 const loadMoreImages = () => {
