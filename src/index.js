@@ -62,11 +62,11 @@ const showOrHideBtn = number => {
 }
 
 const createImagesCards = images => {
-    refs.galleryContainer.insertAdjacentHTML('beforeend', galleryTpl(images));
+    refs.gallery.insertAdjacentHTML('beforeend', galleryTpl(images));
 }
 
 const clearGalleryContainer = () => {
-    refs.galleryContainer.innerHTML = '';
+    refs.gallery.innerHTML = '';
 }
 
 const scrollToBottom = () => {
