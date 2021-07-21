@@ -63,7 +63,7 @@ img {
 
   margin-left: -10px;
   margin-top: -10px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .images-item {
@@ -79,7 +79,12 @@ img {
   transition: transform var(--animation-duration) var(--timing-function);
 }
 
+.images-item:hover img {
+  cursor: zoom-in;
+}
+
 .images-item:hover {
+  cursor: pointer;
   transform: scale(1.03);
 }
 

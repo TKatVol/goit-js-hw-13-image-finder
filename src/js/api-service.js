@@ -11,9 +11,10 @@ export default class ImagesApiService {
         const response = await fetch(`${BASE_URL}/?image_type=photo&orientation=horizontal&q=${this.searchQuery}&page=${this.page}&per_page=12&key=${API_KEY}`);
         const { hits, total } = await response.json();
         
+        const newTotal = total - (this.page * 12) + 12;
         this.addPage();
-       
-        return { hits, total };
+           
+        return { hits, total, newTotal};
     }
 
     get query() {
